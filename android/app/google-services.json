@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "716628313066",
+    "project_id": "flyer-23604",
+    "storage_bucket": "flyer-23604.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716628313066:android:68c3a60c37b66698302893",
+        "android_client_info": {
+          "package_name": "com.michaelblason.flyer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "716628313066-c80cf5i9mb05ltsrgfr9q14f823e0a7d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.michaelblason.flyer",
+            "certificate_hash": "bc1ff68d6cbbe97a9b2ebfdb7279bd6cf4459721"
+          }
+        },
+        {
+          "client_id": "716628313066-d7lslmvfgllt0gpdfgjvs46ukf25nnhp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIE3vO1XnZ3XVhfQjQh_ZofGvX1uNjBXg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "716628313066-d7lslmvfgllt0gpdfgjvs46ukf25nnhp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "716628313066-hdstfiv04kdmkom4jiafnfb5m5pccmh0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.michaelblason.flyer"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
