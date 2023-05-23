@@ -10,17 +10,10 @@ class BottomNavBar extends StatelessWidget {
       items: const [
         BottomNavigationBarItem(
           icon: Icon(
-            FontAwesomeIcons.graduationCap,
+            FontAwesomeIcons.house,
             size: 20,
           ),
-          label: 'Topics',
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(
-            FontAwesomeIcons.bolt,
-            size: 20,
-          ),
-          label: 'About',
+          label: 'Wall',
         ),
         BottomNavigationBarItem(
           icon: Icon(
@@ -37,9 +30,6 @@ class BottomNavBar extends StatelessWidget {
             // do nothing
             break;
           case 1:
-            Navigator.pushNamed(context, '/about');
-            break;
-          case 2:
             Navigator.pushNamed(context, '/profile');
             break;
         }
