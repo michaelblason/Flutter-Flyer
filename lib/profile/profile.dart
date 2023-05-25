@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flyer/main.dart';
 import 'package:flyer/services/auth.dart';
+import 'package:flyer/theme.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -8,15 +10,32 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Profile'),
+        // leading: IconButton(
+        //   onPressed: () {},
+        //   icon: const Icon(Icons.arrow_back),
+        // ),
+        title:
+            Text('Profile', style: Theme.of(context).textTheme.headlineMedium),
       ),
-      body: ElevatedButton(
-          child: const Text('Sign Out'),
-          onPressed: () async {
-            await AuthService().signOut();
-            Navigator.of(context)
-                .pushNamedAndRemoveUntil('/', (route) => false);
-          }),
+      body: SingleChildScrollView(
+        child: Container(),
+      ),
     );
+  }
+}
+
+class SignOutButton extends StatelessWidget {
+  const SignOutButton({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return ElevatedButton(
+        child: const Text('Sign Out'),
+        onPressed: () {
+          AuthService().signOut();
+          Navigator.of(context).pushNamedAndRemoveUntil('/', (route) => false);
+        });
   }
 }
