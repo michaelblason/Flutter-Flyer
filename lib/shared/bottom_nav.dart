@@ -13,7 +13,14 @@ class BottomNavBar extends StatelessWidget {
             FontAwesomeIcons.house,
             size: 20,
           ),
-          label: 'Wall',
+          label: 'Home',
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(
+            FontAwesomeIcons.plus,
+            size: 20,
+          ),
+          label: 'Upload',
         ),
         BottomNavigationBarItem(
           icon: Icon(
@@ -23,13 +30,15 @@ class BottomNavBar extends StatelessWidget {
           label: 'Profile',
         ),
       ],
-      fixedColor: const Color.fromRGBO(226, 121, 46, 1),
+      type: BottomNavigationBarType.fixed,
       onTap: (int idx) {
         switch (idx) {
           case 0:
             // do nothing
             break;
           case 1:
+            break;
+          case 2:
             Navigator.pushNamed(context, '/profile');
             break;
         }

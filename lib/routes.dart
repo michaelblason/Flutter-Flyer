@@ -9,3 +9,5 @@ var appRoutes = {
   '/profile': (context) => const ProfileScreen(),
   '/wall': (context) => const WallScreen(),
 };
+
+// Dymanic App Route: DetailsScreen(String image)
