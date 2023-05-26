@@ -11,22 +11,10 @@ var appTheme = ThemeData(
   ),
   brightness: Brightness.light,
   buttonTheme: const ButtonThemeData(),
-  colorScheme: const ColorScheme(
-    brightness: Brightness.light,
-    primary: Color(0xFF0275d8),
-    onPrimary: Color(0xFF505050),
-    secondary: Color(0xFF292b2c),
-    onSecondary: Color(0xFF505050),
-    error: Color(0xFFF32424),
-    onError: Color(0xFFF32424),
-    background: Color(0xFFf7f7f7),
-    onBackground: Color(0xFFf7f7f7),
-    surface: Color(0xFF505050),
-    onSurface: Color(0xFF505050),
-  ),
-  textTheme: const TextTheme(
+  colorSchemeSeed: const Color(0xFF0275d8),
+  textTheme: TextTheme(
     headlineMedium: TextStyle(
-      color: Color(0xFF505050),
+      color: const ColorScheme.light().onBackground,
       fontWeight: FontWeight.bold,
       fontSize: 20,
     ),

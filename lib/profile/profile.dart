@@ -10,10 +10,11 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        // leading: IconButton(
-        //   onPressed: () {},
-        //   icon: const Icon(Icons.arrow_back),
-        // ),
+        leading: IconButton(
+          onPressed: () {},
+          icon: const Icon(Icons.arrow_back),
+          color: Theme.of(context).colorScheme.onBackground,
+        ),
         title:
             Text('Profile', style: Theme.of(context).textTheme.headlineMedium),
       ),

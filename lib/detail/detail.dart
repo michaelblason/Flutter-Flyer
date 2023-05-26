@@ -8,8 +8,8 @@ class DetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-            iconTheme: const IconThemeData(color: Colors.black),
-            backgroundColor: Colors.white),
+          iconTheme: const IconThemeData(color: Colors.black),
+        ),
         body: Column(
           children: [
             Hero(
