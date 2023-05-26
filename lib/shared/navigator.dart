@@ -20,14 +20,21 @@ class _NavBarState extends State<BottomNavigator> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'Home',
-          style: Theme.of(context).textTheme.headlineMedium,
-        ),
+        title: <Widget>[
+          Text(
+            'Home',
+            style: Theme.of(context).textTheme.headlineMedium,
+          ),
+          Text(
+            'Profile',
+            style: Theme.of(context).textTheme.headlineMedium,
+          ),
+        ][index],
       ),
       body: screens[index],
       bottomNavigationBar: NavigationBarTheme(
         data: NavigationBarThemeData(
+          indicatorShape: const lin(),
           indicatorColor: Colors.white.withOpacity(0),
           labelTextStyle:
               MaterialStatePropertyAll(Theme.of(context).textTheme.labelSmall),
