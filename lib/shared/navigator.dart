@@ -34,7 +34,7 @@ class _NavBarState extends State<BottomNavigator> {
       body: screens[index],
       bottomNavigationBar: NavigationBarTheme(
         data: NavigationBarThemeData(
-          indicatorShape: const lin(),
+          indicatorShape: const CircleBorder(),
           indicatorColor: Colors.white.withOpacity(0),
           labelTextStyle:
               MaterialStatePropertyAll(Theme.of(context).textTheme.labelSmall),

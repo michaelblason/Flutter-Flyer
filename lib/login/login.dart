@@ -17,14 +17,14 @@ class LoginScreen extends StatelessWidget {
           children: [
             const Image(
               image: AssetImage('assets/logo.png'),
-              height: 180,
+              width: 500,
             ),
             Flexible(
               child: LoginButton(
                 icon: FontAwesomeIcons.userNinja,
                 text: 'Continue as Guest',
                 loginMethod: AuthService().anonLogin,
-                color: Colors.deepPurple,
+                color: const Color.fromRGBO(255, 189, 89, 1),
               ),
             )
           ],

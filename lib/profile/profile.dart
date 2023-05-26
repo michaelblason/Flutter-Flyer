@@ -7,7 +7,7 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const SingleChildScrollView(
-      child: Text("Profile"),
+      child: SignOutButton(),
     );
   }
 }
@@ -20,6 +20,10 @@ class SignOutButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
+        style: ButtonStyle(
+          textStyle: MaterialStateProperty.all(
+              Theme.of(context).textTheme.labelMedium),
+        ),
         child: const Text('Sign Out'),
         onPressed: () {
           AuthService().signOut();
