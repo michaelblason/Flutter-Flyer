@@ -18,5 +18,10 @@ var appTheme = ThemeData(
       fontWeight: FontWeight.bold,
       fontSize: 20,
     ),
+    labelSmall: TextStyle(
+      color: const ColorScheme.light().onBackground,
+      fontWeight: FontWeight.w500,
+      fontSize: 12,
+    ),
   ),
 );

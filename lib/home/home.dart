@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flyer/login/login.dart';
-import 'package:flyer/wall/wall.dart';
 import 'package:flyer/shared/shared.dart';
 import 'package:flyer/services/auth.dart';
 
@@ -19,7 +18,7 @@ class HomeScreen extends StatelessWidget {
             child: ErrorMessage(),
           );
         } else if (snapshot.hasData) {
-          return const WallScreen();
+          return const BottomNavigator();
         } else {
           return const LoginScreen();
         }

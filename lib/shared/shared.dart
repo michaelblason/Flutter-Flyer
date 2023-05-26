@@ -1,3 +1,3 @@
-export 'bottom_nav.dart';
+export 'navigator.dart';
 export 'error.dart';
 export 'loading.dart';
