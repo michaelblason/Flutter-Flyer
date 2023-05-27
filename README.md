@@ -1,16 +1,12 @@
-# flyer
+# Flyer
 
-A new Flutter project.
+This is a mobile app that allows users to view flyers. 
 
-## Getting Started
+## Stack
+It is build with **Flutter** to work across diffent mobile platforms and **Firebase** to handle authentication.
 
-This project is a starting point for a Flutter application.
+## Screenshots
 
-A few resources to get you started if this is your first Flutter project:
+<img src="./assets/screenshots/login.png" width="200" /> <img src="./assets/screenshots/profile.png" width="200" /> <img src="./assets/screenshots/home.png" width="200" /> <img src="./assets/screenshots/details.png" width="200" />
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**Login Screen > Profile Screen > Home Screen > Details Screen**
