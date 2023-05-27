@@ -11,7 +11,7 @@ var appTheme = ThemeData(
   ),
   brightness: Brightness.light,
   buttonTheme: const ButtonThemeData(),
-  colorSchemeSeed: const Color.fromRGBO(255, 189, 89, 1),
+  colorSchemeSeed: const Color(0xFF0275d8),
   textTheme: TextTheme(
     labelMedium: TextStyle(
       color: const ColorScheme.light().onBackground,
