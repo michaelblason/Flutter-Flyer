@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:flutter_signin_button/flutter_signin_button.dart';
 
 import '../services/auth.dart';
 
@@ -12,27 +12,62 @@ class LoginScreen extends StatelessWidget {
       body: Container(
         padding: const EdgeInsets.all(30),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            const Image(
-              image: AssetImage('assets/logo.png'),
-              width: 500,
-            ),
-            Flexible(
-              child: LoginButton(
-                icon: FontAwesomeIcons.userNinja,
-                text: 'Continue as Guest',
-                loginMethod: AuthService().anonLogin,
-                color: const Color(0xFF0275d8),
+            const Padding(
+              padding: EdgeInsets.only(
+                top: 200,
+                bottom: 130,
+              ),
+              child: Image(
+                image: AssetImage('assets/logo.png'),
+                width: 500,
               ),
             ),
-            LoginButton(
-              text: 'Sign in with Google',
-              icon: FontAwesomeIcons.google,
-              color: Colors.blue,
-              loginMethod: AuthService().googleLogin,
+            Padding(
+              padding: const EdgeInsets.all(15),
+              child: SignInButton(
+                Buttons.Email,
+                shape: const RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(30),
+                  ),
+                ),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 20,
+                  vertical: 28,
+                ),
+                onPressed: () {},
+              ),
             ),
+            Padding(
+              padding: const EdgeInsets.all(15),
+              child: SignInButton(
+                Buttons.Google,
+                shape: const RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(30),
+                  ),
+                ),
+                padding: const EdgeInsets.all(20),
+                onPressed: AuthService().googleLogin,
+              ),
+            ),
+            SizedBox(
+              height: 100,
+              child: TextButton(
+                style: const ButtonStyle(
+                  overlayColor: MaterialStatePropertyAll(Colors.transparent),
+                  splashFactory: NoSplash.splashFactory,
+                ),
+                onPressed: AuthService().anonLogin,
+                child: const Text(
+                  'Skip',
+                  style: TextStyle(
+                    color: Colors.blueAccent,
+                  ),
+                ),
+              ),
+            )
           ],
         ),
       ),
