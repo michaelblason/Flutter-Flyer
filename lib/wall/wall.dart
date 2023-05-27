@@ -10,10 +10,11 @@ class WallScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MasonryGridView.builder(
-      gridDelegate: const SliverSimpleGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2),
+      gridDelegate: const SliverSimpleGridDelegateWithMaxCrossAxisExtent(
+          maxCrossAxisExtent: 300),
       itemBuilder: (context, int i) {
         return _Tile(i);
+        
       },
       itemCount: 18,
     );
